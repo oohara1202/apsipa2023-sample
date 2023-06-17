@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Speech-Emotion Control for Text-to-Speech in Spoken Dialogue Systems Using Voice Conversion and x-vector Embedding</title>
+    <style>
+      hr { clear: both; }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Speech-Emotion Control for Text-to-Speech in Spoken Dialogue Systems Using Voice Conversion and x-vector Embedding</h1>
+      </header>
+    </article>
+
+    <hr>
+    <h2>Audio samples of emotion identification tests</h2>
+    <h3>Text 1</h3>
+    <table>
+      <tr>
+        <th>
+          Emotions
+        </th>
+        <th>
+          Neutral
+        </th>
+        <th>
+          Happy
+        </th>
+        <th>
+          Sad
+        </th>
+      </tr>
+      <tr>
+        <th>
+          OneHot-SpkID
+        </th>
+        <td>
+          <audio src="wav/exp1/j06/OneHot-SpkID_Neutral_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/OneHot-SpkID_Happy_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/OneHot-SpkID_Sad_j06.wav" controls></audio>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Teacher-GT
+        </th>
+        <td>
+          <audio src="wav/exp1/j06/Teacher-GT_Neutral_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/Teacher-GT_Happy_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/Teacher-GT_Sad_j06.wav" controls></audio>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          M-student-Converted (proposed)
+        </th>
+        <td>
+          <audio src="wav/exp1/j06/MStudent-Converted_Neutral_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/MStudent-Converted_Happy_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/MStudent-Converted_Sad_j06.wav" controls></audio>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          F-student-Converted (proposed)
+        </th>
+        <td>
+          <audio src="wav/exp1/j06/FStudent-Converted_Neutral_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/FStudent-Converted_Happy_j06.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j06/FStudent-Converted_Sad_j06.wav" controls></audio>
+        </td>
+      </tr>
+    </table>
+    <h3>Text 2</h3>
+    <table>
+      <tr>
+        <th>
+          Emotions
+        </th>
+        <th>
+          Neutral
+        </th>
+        <th>
+          Happy
+        </th>
+        <th>
+          Sad
+        </th>
+      </tr>
+      <tr>
+        <th>
+          OneHot-SpkID
+        </th>
+        <td>
+          <audio src="wav/exp1/j11/OneHot-SpkID_Neutral_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/OneHot-SpkID_Happy_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/OneHot-SpkID_Sad_j11.wav" controls></audio>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Teacher-GT
+        </th>
+        <td>
+          <audio src="wav/exp1/j11/Teacher-GT_Neutral_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/Teacher-GT_Happy_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/Teacher-GT_Sad_j11.wav" controls></audio>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          M-student-Converted (proposed)
+        </th>
+        <td>
+          <audio src="wav/exp1/j11/MStudent-Converted_Neutral_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/MStudent-Converted_Happy_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/MStudent-Converted_Sad_j11.wav" controls></audio>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          F-student-Converted (proposed)
+        </th>
+        <td>
+          <audio src="wav/exp1/j11/FStudent-Converted_Neutral_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/FStudent-Converted_Happy_j11.wav" controls></audio>
+        </td>
+        <td>
+          <audio src="wav/exp1/j11/FStudent-Converted_Sad_j11.wav" controls></audio>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+    <h2>Audio samples of paired-comparision experiments</h2>
+    <h3>Happy</h3>
+    <p>
+      <figure>
+        <figcaption>Synthesized speech using x-vectors extracted from converted speech with <b>strong</b> emotion (proposed).</figcaption>
+        <audio src="wav/exp2/Happy/Happy_strong_text2.wav" controls></audio>
+        <figcaption>Synthesized speech using x-vectors extracted from converted speech with <b>weak</b> emotion (proposed).</figcaption>
+        <audio src="wav/exp2/Happy/Happy_weak_text2.wav" controls></audio>
+        <figcaption>The synthesized speech generated by OneHot-EmoID.</figcaption>
+        <audio src="wav/exp2/Happy/Happy_onehot_text2.wav" controls></audio>
+        <figcaption>Ground truth uttered by the M-student with <b>strong</b> emotion.</figcaption>
+        <audio src="wav/exp2/Happy/Happy_strong_gt.wav" controls></audio>
+        <figcaption>Ground truth uttered by the M-student with <b>weak</b> emotion.</figcaption>
+        <audio src="wav/exp2/Happy/Happy_weak_gt.wav" controls></audio>
+        <figcaption>The converted speech of the M-student with <b>strong</b> emotion (*NOT USED).</figcaption>
+        <audio src="wav/exp2/Happy/Happy_strong_converted.wav" controls></audio>
+        <figcaption>The converted speech of the M-student with <b>weak</b> emotion (*NOT USED).</figcaption>
+        <audio src="wav/exp2/Happy/Happy_weak_converted.wav" controls></audio>
+      </figure>
+    </p>
+    <h3>Sad</h3>
+    <p>
+      <figure>
+        <figcaption>Synthesized speech using x-vectors extracted from converted speech with <b>strong</b> emotion (proposed).</figcaption>
+        <audio src="wav/exp2/Sad/Sad_strong_text1.wav" controls></audio>
+        <figcaption>Synthesized speech using x-vectors extracted from converted speech with <b>weak</b> emotion (proposed).</figcaption>
+        <audio src="wav/exp2/Sad/Sad_weak_text1.wav" controls></audio>
+        <figcaption>The synthesized speech generated by OneHot-EmoID.</figcaption>
+        <audio src="wav/exp2/Sad/Sad_onehot_text1.wav" controls></audio>
+        <figcaption>Ground truth uttered by the M-student with <b>strong</b> emotion.</figcaption>
+        <audio src="wav/exp2/Sad/Sad_strong_gt.wav" controls></audio>
+        <figcaption>Ground truth uttered by the M-student with <b>weak</b> emotion.</figcaption>
+        <audio src="wav/exp2/Sad/Sad_weak_gt.wav" controls></audio>
+        <figcaption>The converted speech of the M-student with <b>strong</b> emotion (*NOT USED).</figcaption>
+        <audio src="wav/exp2/Sad/Sad_strong_converted.wav" controls></audio>
+        <figcaption>The converted speech of the M-student with <b>weak</b> emotion (*NOT USED).</figcaption>
+        <audio src="wav/exp2/Sad/Sad_weak_converted.wav" controls></audio>
+      </figure>
+    </p>
+  </body>
+
+</html>
